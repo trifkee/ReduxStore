@@ -1,0 +1,6 @@
+.featured-btn-add {
+  display: "flex";
+  gap: "1rem";
+  align-content: "center";
+  align-items: "center";
+}

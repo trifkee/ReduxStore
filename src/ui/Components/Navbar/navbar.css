@@ -1,0 +1,109 @@
+nav {
+  position: sticky;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  z-index: 9;
+  top: 0;
+  color: var(--accent-clr);
+  background-color: var(--secondary-clr);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.nav-btns {
+  min-width: 20rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  font-family: var(--serif);
+  font-size: 2rem;
+}
+
+.nav-btn {
+  margin-left: 1rem;
+}
+
+.nav-btn > span {
+  border-radius: 2px;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  margin-left: 1rem;
+  margin-right: auto;
+  /* padding: 0.2rem; */
+}
+
+.home-btn {
+  display: inline-block;
+}
+
+.nav-login {
+  /* gap: 1rem; */
+  /* justify-content: space-between; */
+  align-items: center;
+  display: flex;
+  position: relative;
+  color: var(--secondary-clr);
+  font-family: var(--serif);
+  background-color: var(--accent-clr);
+  padding: 0.4rem 1rem;
+  transition: all 0.5s ease;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  /* z-index:  */
+  z-index: 9;
+}
+
+.nav-login:is(:not(span)) {
+  overflow: hidden;
+  /* background: red; */
+}
+
+.nav-login::before {
+  z-index: -1;
+  content: "";
+  overflow: hidden;
+  position: absolute;
+  border-radius: 50rem;
+  left: 0;
+  top: 0;
+  aspect-ratio: 1/1;
+  transition: all 0.5s ease;
+  background: var(--primary-clr);
+  width: 100%;
+  transform: translateX(-100%);
+  /* height: 100%; */
+  transform-origin: bottom left;
+}
+
+.nav-login:hover {
+  position: relative;
+  z-index: 3;
+  color: var(--secondary-clr);
+  /* background: transparent; */
+}
+
+.nav-login:hover::before {
+  overflow: hidden;
+  /* left: 100%; */
+  transform: translateX(-40%);
+  scale: 2;
+}
+
+.nav-darkmode {
+  display: flex;
+  margin-right: auto;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  background: none;
+  filter: invert();
+}

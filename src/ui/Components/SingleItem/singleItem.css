@@ -1,0 +1,113 @@
+.single-item {
+  display: flex;
+  background-color: var(--accent-clr);
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  cursor: auto;
+  transition: all 0.1s ease;
+  border: 0.5rem solid var(--accent-clr);
+}
+
+.single-item:hover {
+  border: 0.5rem solid white;
+  /* border: white; */
+  background-color: white;
+}
+
+.single-item-category-tag {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  padding: 0 0.5rem;
+  color: var(--accent-clr);
+  background-color: var(--background-clr);
+}
+
+.single-item > .single-item-img {
+  mix-blend-mode: multiply;
+  overflow: hidden;
+  height: 10rem;
+}
+
+.single-item-img > img {
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+  object-fit: contain;
+  border-radius: 0 0 0.7rem 0.7rem;
+}
+
+.single-item > h3 {
+  /* background-color: red; */
+  padding: 0.5rem 0.1rem;
+  white-space: nowrap;
+  line-height: 1;
+  max-width: 100%;
+  font-family: var(--serif);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.single-item > .single-item-desc {
+  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.single-item-cta {
+  z-index: 99;
+  position: absolute;
+  right: -100%;
+  top: 50%;
+  transform: translateY(-65%);
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.single-item-cta > button {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  aspect-ratio: 1/1 !important;
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  color: var(--background-clr);
+  background-color: var(--primary-clr);
+  transition: all 0.2s ease;
+}
+
+.single-item-cta > button:hover {
+  background-color: var(--background-clr);
+  color: var(--accent-clr);
+}
+
+.remove-item {
+  transition: 0.2s ease;
+}
+
+.remove-item:hover {
+  background-color: var(--background-clr);
+  color: var(--accent-clr);
+}
+
+.single-item:hover .single-item-cta {
+  right: 0%;
+}

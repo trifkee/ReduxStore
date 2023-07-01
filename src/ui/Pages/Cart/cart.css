@@ -1,0 +1,33 @@
+.cart-section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 1rem;
+  grid-gap: 1rem;
+}
+
+.cart-title {
+  display: flex;
+  align-content: center;
+  font-family: var(--serif);
+  color: var(--accent-clr);
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+
+.remove-item {
+  font-size: 1.2rem;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 100rem !important;
+  background-color: var(--primary-clr);
+}
+
+.home-btn {
+  text-decoration: underline;
+  margin-left: 1rem;
+  font-family: var(--serif);
+  color: var(--accent-clr);
+}

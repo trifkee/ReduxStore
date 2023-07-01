@@ -1,0 +1,14 @@
+.section-items {
+  max-width: 100vw;
+  padding: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.section-items-title {
+  font-family: var(--serif);
+  font-size: 4rem;
+  margin-left: 1rem;
+  color: var(--accent-clr);
+}

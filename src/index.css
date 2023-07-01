@@ -1,0 +1,41 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;800&display=swap");
+
+:root {
+  --poppins: "Poppins", sans-serif;
+  --serif: "DM Serif Display", serif;
+  --background-clr: #0e2015;
+  --primary-clr: #c7b8e0;
+  --secondary-clr: #192c21;
+  --accent-clr: #eadad0;
+  --accent-2-clr: #e7e7e7;
+}
+/* MAIN */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--poppins);
+  background: var(--secondary-clr);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
