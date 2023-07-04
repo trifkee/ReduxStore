@@ -31,6 +31,8 @@ export const SingleItem = ({ props }: { props: item }) => {
               dispatch(
                 addToCart({
                   id: props.id,
+                  category: props.category,
+                  description: props.description,
                   title: props.title,
                   price: props.price,
                   qty: (!!props.qty && props.qty + 1) || 1,

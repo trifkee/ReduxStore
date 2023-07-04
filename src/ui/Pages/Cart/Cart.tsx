@@ -27,6 +27,21 @@ export const Cart = () => {
           <AiOutlineShoppingCart />
         </span>
       </h2>
+      {cartItems.length > 0 && (
+        <p style={{ color: "white", paddingLeft: "1rem" }}>
+          Total items: {cartItems.length}{" "}
+          <span style={{ fontWeight: "30" }}>|</span> Total price:{" "}
+          {cartItems
+            .reduce(
+              (accumulator: number, currentItem: item) =>
+                accumulator +
+                currentItem.price * (currentItem.qty ? currentItem.qty : 1),
+              0
+            )
+            .toFixed(1)}
+          $
+        </p>
+      )}
       {cartItems.length < 1 && (
         <h3
           style={{
